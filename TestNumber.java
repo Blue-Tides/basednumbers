@@ -40,6 +40,12 @@ public class TestNumber extends junit.framework.TestCase {
         assertEquals(391,base2.getValue10());
     } 
     public void testSetBase16() {
-
+        Number base16=new Number(1,16);
+        base16.setValue("61F");
+        assertEquals(1567,base16.getValue10());
+        base16.setValue("1E427");
+        assertEquals(123943,base16.getValue10());
+        base16.setValue("3A50");
+        assertEquals(14928,base16.getValue10());
     }
 }

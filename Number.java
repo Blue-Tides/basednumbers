@@ -68,7 +68,7 @@ public class Number {
     int l=s.length();
     for(int i=0;i<l;i++) {
       char x=s.charAt(i);
-      v+=(int)(x-(Character.isDigit(x)?'0':0))*Math.pow(b,l-i-1);
+      v+=(int)(x-(Character.isDigit(x)?'0':55))*Math.pow(b,l-i-1);
     }
   }
   public String toString() {
